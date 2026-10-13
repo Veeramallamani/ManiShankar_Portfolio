@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Download, Menu, X, FileText } from 'lucide-react'
+import { Download, Menu, X, FileText, Mail } from 'lucide-react'
+import { LinkedinIcon } from './SocialIcons'
 import { Logo } from './Logo'
 import { profileData } from '../data/profile'
+
 
 interface NavbarProps {
   onOpenResumeModal?: () => void
@@ -91,8 +93,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
             })}
           </nav>
 
-          {/* Action Button: Download Resume */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Action Buttons: Download Resume & Connect */}
+          <div className="hidden md:flex items-center gap-2.5">
             <a
               href={profileData.resumePath}
               download="Mani_Shankar_Resume.pdf"
@@ -107,17 +109,48 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
               <button
                 type="button"
                 onClick={onOpenResumeModal}
-                className="p-2 text-slate-300 hover:text-[#42E6B0] hover:bg-[#0D3038] rounded-full transition-colors border border-transparent hover:border-[#0D3038]"
+                className="p-2 text-slate-300 hover:text-[#42E6B0] hover:bg-[#0D3038] rounded-full transition-colors border border-[#164652] hover:border-[#42E6B0]/40"
                 title="Preview Resume"
                 aria-label="Preview Resume Modal"
               >
                 <FileText className="w-4 h-4" />
               </button>
             )}
+
+            {/* Connect Icon: Direct Message / Contact */}
+            <a
+              href="#contact"
+              className="p-2 text-slate-300 hover:text-[#42E6B0] hover:bg-[#0D3038] rounded-full transition-all border border-[#164652] hover:border-[#42E6B0] flex items-center justify-center group"
+              title="Connect with Me"
+              aria-label="Connect with Mani Shankar"
+            >
+              <Mail className="w-4 h-4 text-[#42E6B0] group-hover:scale-110 transition-transform" />
+            </a>
+
+            {/* Connect on LinkedIn Icon */}
+            <a
+              href={profileData.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="p-2 text-slate-300 hover:text-[#27C5E8] hover:bg-[#0D3038] rounded-full transition-all border border-[#164652] hover:border-[#27C5E8] flex items-center justify-center group"
+              title="Connect on LinkedIn"
+              aria-label="Connect on LinkedIn"
+            >
+              <LinkedinIcon className="w-4 h-4 text-[#27C5E8] group-hover:scale-110 transition-transform" />
+            </a>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu & Quick Connect */}
           <div className="md:hidden flex items-center gap-2">
+            <a
+              href="#contact"
+              className="p-2 text-[#42E6B0] border border-[#164652] hover:border-[#42E6B0] rounded-full"
+              title="Connect"
+              aria-label="Connect"
+            >
+              <Mail className="w-4 h-4" />
+            </a>
+
             <a
               href={profileData.resumePath}
               download="Mani_Shankar_Resume.pdf"
@@ -127,6 +160,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
             >
               <Download className="w-4 h-4" />
             </a>
+
 
             <button
               type="button"

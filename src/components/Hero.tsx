@@ -89,24 +89,25 @@ export const Hero: React.FC = () => {
                 </svg>
               </div>
 
-              {/* Background Circular Glow and Orbit Ring */}
-              <div className="absolute inset-0 top-6 w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] mx-auto rounded-full bg-gradient-to-tr from-[#0b3c45] via-[#104d59] to-[#125d6b] opacity-90 blur-[1px] shadow-2xl -z-10" />
+              {/* Background Circular Ambient Glow */}
+              <div className="absolute inset-0 top-2 w-[290px] h-[290px] sm:w-[350px] sm:h-[350px] md:w-[370px] md:h-[370px] mx-auto rounded-full bg-gradient-to-tr from-[#0b3c45] via-[#104d59] to-[#27C5E8]/25 opacity-80 blur-lg -z-10" />
               
               {/* Subtle Concentric Orbital Ring */}
-              <div className="absolute inset-0 top-2 w-[340px] h-[340px] sm:w-[410px] sm:h-[410px] mx-auto rounded-full border border-[#42E6B0]/15 pointer-events-none -z-10" />
+              <div className="absolute inset-0 top-0 w-[310px] h-[310px] sm:w-[370px] sm:h-[370px] md:w-[390px] md:h-[390px] mx-auto rounded-full border border-[#42E6B0]/25 pointer-events-none -z-10" />
 
-              {/* Portrait Container */}
-              <div className="relative z-10 w-[290px] h-[320px] sm:w-[350px] sm:h-[380px] mx-auto overflow-hidden rounded-b-[40px] pt-2 flex items-end justify-center">
+              {/* Portrait Container in Pure Circle Shape */}
+              <div className="relative z-10 w-[270px] h-[270px] sm:w-[330px] sm:h-[330px] md:w-[350px] md:h-[350px] mx-auto overflow-hidden rounded-full border-4 border-[#42E6B0]/40 shadow-2xl shadow-black/60 bg-[#0B3A3F] flex items-center justify-center">
                 <img
                   src="/mani_portrait.jpg"
                   alt="Mani Shankar - Business Analytics Student wearing professional black blazer"
-                  className="w-full h-full object-cover object-top filter contrast-[1.03] brightness-[1.02] drop-shadow-xl select-none"
+                  className="w-full h-full object-cover object-[center_18%] filter contrast-[1.03] brightness-[1.02] drop-shadow-md select-none scale-105"
                   loading="eager"
                 />
               </div>
 
               {/* Overlapping Glass Statistics Panel matching reference image */}
-              <div className="relative z-30 -mt-8 sm:-mt-10 mx-auto w-full px-2 sm:px-4">
+              <div className="relative z-30 -mt-6 sm:-mt-8 mx-auto w-full px-2 sm:px-4">
+
                 <div className="glass-panel rounded-2xl p-3 sm:p-4 shadow-xl shadow-black/40 grid grid-cols-3 divide-x divide-[#42E6B0]/20 text-center">
                   
                   {/* Stat 1: Academic Projects */}

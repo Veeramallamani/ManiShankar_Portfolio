@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dark-bg: #061B22;
+    --dark-secondary: #092830;
+    --dark-card: #0D3038;
+    --accent-mint: #42E6B0;
+    --accent-cyan: #27C5E8;
+    --light-bg: #FFFFFF;
+    --light-section: #F5F8FA;
+    --text-dark: #102536;
+    --text-muted: #61758A;
+    --border-light: #DDE7EC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #061B22;
+    color: #F5FAFC;
+    overflow-x: hidden;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom Glassmorphism */
+.glass-panel {
+  background: rgba(13, 48, 56, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(66, 230, 176, 0.2);
+}
+
+.glass-badge {
+  background: rgba(66, 230, 176, 0.1);
+  border: 1px solid rgba(66, 230, 176, 0.25);
+}
+
+/* Mint-Cyan Gradient Text */
+.gradient-text-mint {
+  background: linear-gradient(135deg, #42E6B0 0%, #27C5E8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #061B22;
+}
+::-webkit-scrollbar-thumb {
+  background: #0D3038;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #42E6B0;
+}

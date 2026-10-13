@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
       <div>
         <div className="flex items-center justify-between gap-3 mb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#061B22] border border-[#164652] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-xl bg-[#071F27] border border-[#164652] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
               {getIcon()}
             </div>
             <div>
@@ -47,8 +47,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
           </div>
 
           {/* Circular arrow button matching mockup */}
-          <div className="w-9 h-9 rounded-full bg-[#061B22] border border-[#164652] group-hover:border-[#42E6B0] group-hover:bg-[#42E6B0] flex items-center justify-center shrink-0 transition-all duration-300">
-            <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-[#061B22] transition-colors group-hover:translate-x-0.5" />
+          <div className="w-9 h-9 rounded-full bg-[#071F27] border border-[#164652] group-hover:border-[#42E6B0] group-hover:bg-[#42E6B0] flex items-center justify-center shrink-0 transition-all duration-300">
+            <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-[#071F27] transition-colors group-hover:translate-x-0.5" />
           </div>
         </div>
 
@@ -64,13 +64,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
           {project.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-[#061B22] text-slate-300 border border-[#164652]"
+              className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-[#071F27] text-slate-300 border border-[#164652]"
             >
               {tag}
             </span>
           ))}
           {project.tags.length > 3 && (
-            <span className="text-[11px] font-medium px-2 py-1 rounded-md bg-[#061B22] text-slate-400">
+            <span className="text-[11px] font-medium px-2 py-1 rounded-md bg-[#071F27] text-slate-400">
               +{project.tags.length - 3}
             </span>
           )}

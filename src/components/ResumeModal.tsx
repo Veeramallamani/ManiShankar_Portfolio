@@ -15,7 +15,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
       <div className="relative w-full max-w-4xl bg-[#092830] border border-[#164652] rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col h-[85vh]">
         
         {/* Header */}
-        <div className="px-6 py-4 bg-[#061B22] border-b border-[#164652] flex items-center justify-between shrink-0">
+        <div className="px-6 py-4 bg-[#071F27] border-b border-[#164652] flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-[#0D3038] text-[#42E6B0] flex items-center justify-center border border-[#42E6B0]/30">
               <FileText className="w-4 h-4" />
@@ -34,7 +34,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <a
               href={profileData.resumePath}
               download="Mani_Shankar_Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] text-[#061B22] text-xs font-bold shadow-md hover:brightness-105 transition-all"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] text-[#071F27] text-xs font-bold shadow-md hover:brightness-105 transition-all"
             >
               <Download className="w-3.5 h-3.5 stroke-[2.5]" />
               <span>Download PDF</span>
@@ -61,7 +61,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         </div>
 
         {/* Footer info bar */}
-        <div className="px-6 py-3 bg-[#061B22] border-t border-[#164652] flex items-center justify-between text-xs text-slate-400 shrink-0">
+        <div className="px-6 py-3 bg-[#071F27] border-t border-[#164652] flex items-center justify-between text-xs text-slate-400 shrink-0">
           <div className="flex items-center gap-2">
             <CheckCircle2 className="w-4 h-4 text-[#42E6B0]" />
             <span>Official Curriculum Vitae (PDF format)</span>

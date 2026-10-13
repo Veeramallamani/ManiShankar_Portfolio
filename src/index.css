@@ -2,16 +2,12 @@
 
 @layer base {
   :root {
-    --dark-bg: #061B22;
+    --dark-bg: #071F27;
     --dark-secondary: #092830;
     --dark-card: #0D3038;
     --accent-mint: #42E6B0;
     --accent-cyan: #27C5E8;
-    --light-bg: #FFFFFF;
-    --light-section: #F5F8FA;
-    --text-dark: #102536;
-    --text-muted: #61758A;
-    --border-light: #DDE7EC;
+    --border-dark: #164652;
   }
 
   html {
@@ -20,10 +16,11 @@
   }
 
   body {
-    background-color: #061B22;
+    background-color: #071F27;
     color: #F5FAFC;
     overflow-x: hidden;
   }
+
 }
 
 .font-handwriting {
@@ -55,7 +52,7 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #061B22;
+  background: #071F27;
 }
 ::-webkit-scrollbar-thumb {
   background: #0D3038;

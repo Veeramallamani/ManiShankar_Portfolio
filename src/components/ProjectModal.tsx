@@ -88,7 +88,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
       <div className="relative w-full max-w-4xl bg-[#092830] border border-[#164652] rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col max-h-[92vh]">
         
         {/* Modal Top Header */}
-        <div className="px-6 py-5 bg-[#061B22] border-b border-[#164652] flex items-center justify-between shrink-0">
+        <div className="px-6 py-5 bg-[#071F27] border-b border-[#164652] flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3">
             <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#0D3038] text-[#42E6B0] border border-[#42E6B0]/30">
               {project.badgeText}
@@ -216,7 +216,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {project.objectives.map((obj, i) => (
-                    <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-[#061B22]/70 border border-[#164652]">
+                    <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-[#071F27]/70 border border-[#164652]">
                       <ChevronRight className="w-4 h-4 text-[#42E6B0] shrink-0 mt-0.5" />
                       <span className="text-xs text-slate-300">{obj}</span>
                     </div>
@@ -226,7 +226,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
               {/* Dataset & Tools */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 rounded-xl bg-[#061B22]/60 border border-[#164652]">
+                <div className="p-4 rounded-xl bg-[#071F27]/60 border border-[#164652]">
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 mb-2">
                     <FileSpreadsheet className="w-4 h-4 text-[#42E6B0]" />
                     Dataset Description
@@ -236,7 +236,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#061B22]/60 border border-[#164652]">
+                <div className="p-4 rounded-xl bg-[#071F27]/60 border border-[#164652]">
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 mb-2">
                     <Cpu className="w-4 h-4 text-[#27C5E8]" />
                     Tools & Technologies
@@ -264,7 +264,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   {project.methodology.map((step, idx) => (
                     <div
                       key={idx}
-                      className="p-3.5 rounded-xl bg-[#061B22] border border-[#164652] flex items-start gap-3"
+                      className="p-3.5 rounded-xl bg-[#071F27] border border-[#164652] flex items-start gap-3"
                     >
                       <span className="w-6 h-6 rounded-full bg-[#0D3038] text-[#42E6B0] font-bold text-xs flex items-center justify-center shrink-0 border border-[#42E6B0]/30">
                         {idx + 1}
@@ -283,7 +283,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               {project.keyVisualizations.map((viz, idx) => (
                 <div
                   key={idx}
-                  className="p-5 rounded-2xl bg-[#061B22] border border-[#164652]"
+                  className="p-5 rounded-2xl bg-[#071F27] border border-[#164652]"
                 >
                   <div className="flex items-center justify-between mb-2">
                     <h4 className="text-sm font-bold text-white flex items-center gap-2">
@@ -361,7 +361,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <div className="space-y-6 animate-in fade-in duration-200">
               {project.id === 'loan-default-prediction' ? (
                 /* Loan Default Risk Simulator */
-                <div className="p-6 rounded-2xl bg-[#061B22] border border-[#164652] space-y-6">
+                <div className="p-6 rounded-2xl bg-[#071F27] border border-[#164652] space-y-6">
                   <div className="flex items-center gap-2 mb-2">
                     <Calculator className="w-5 h-5 text-[#42E6B0]" />
                     <h3 className="text-base font-bold text-white">
@@ -443,7 +443,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 </div>
               ) : (
                 /* ManiLoan / Financial Simulator */
-                <div className="p-6 rounded-2xl bg-[#061B22] border border-[#164652] space-y-6">
+                <div className="p-6 rounded-2xl bg-[#071F27] border border-[#164652] space-y-6">
                   <div className="flex items-center gap-2 mb-2">
                     <Calculator className="w-5 h-5 text-[#42E6B0]" />
                     <h3 className="text-base font-bold text-white">
@@ -562,7 +562,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               </div>
 
               {/* Recommendations */}
-              <div className="p-5 rounded-2xl bg-[#061B22] border border-[#164652]">
+              <div className="p-5 rounded-2xl bg-[#071F27] border border-[#164652]">
                 <h3 className="text-base font-bold text-white flex items-center gap-2 mb-3">
                   <CheckCircle2 className="w-4 h-4 text-[#42E6B0]" />
                   <span>Actionable Business Recommendations</span>
@@ -579,7 +579,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
               {/* Challenges */}
               {project.challenges && (
-                <div className="p-4 rounded-xl bg-[#061B22]/50 border border-[#164652]">
+                <div className="p-4 rounded-xl bg-[#071F27]/50 border border-[#164652]">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
                     Challenges & Key Learnings
                   </h4>
@@ -598,7 +598,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         </div>
 
         {/* Modal Footer */}
-        <div className="px-6 py-4 bg-[#061B22] border-t border-[#164652] flex items-center justify-between shrink-0">
+        <div className="px-6 py-4 bg-[#071F27] border-t border-[#164652] flex items-center justify-between shrink-0">
           <div className="text-xs text-slate-400">
             {project.tools.join(' • ')}
           </div>

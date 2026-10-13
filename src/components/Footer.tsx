@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className="bg-[#05151B] text-slate-300 border-t border-[#0D3038] py-12 lg:py-16">
+    <footer className="bg-[#071F27] text-slate-300 border-t border-[#164652] py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-[#0D3038]">

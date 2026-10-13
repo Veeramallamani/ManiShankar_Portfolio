@@ -18,7 +18,7 @@ export function App() {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-[#061B22] text-[#F5FAFC] selection:bg-[#42E6B0]/30 selection:text-[#42E6B0]">
+    <div className="min-h-screen bg-[#071F27] text-[#F5FAFC] selection:bg-[#42E6B0]/30 selection:text-[#42E6B0]">
       {/* Top Navigation */}
       <Navbar onOpenResumeModal={() => setIsResumeModalOpen(true)} />
 

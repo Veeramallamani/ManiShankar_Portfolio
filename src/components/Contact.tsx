@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
   }
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-[#061B22] text-white border-t border-[#0D3038] relative scroll-mt-20">
+    <section id="contact" className="py-20 lg:py-28 bg-[#071F27] text-white border-t border-[#164652] relative scroll-mt-20">
       {/* Ambient background glow */}
       <div className="absolute bottom-0 right-10 w-96 h-96 bg-[#27C5E8]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-10 left-10 w-80 h-80 bg-[#42E6B0]/5 rounded-full blur-3xl pointer-events-none" />
@@ -107,7 +107,7 @@ export const Contact: React.FC = () => {
               </p>
 
               {/* Email Card with Copy button */}
-              <div className="p-4 rounded-2xl bg-[#061B22] border border-[#164652] flex items-center justify-between gap-3">
+              <div className="p-4 rounded-2xl bg-[#071F27] border border-[#164652] flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 overflow-hidden">
                   <div className="w-10 h-10 rounded-xl bg-[#0D3038] flex items-center justify-center text-[#42E6B0] shrink-0 border border-[#42E6B0]/30">
                     <Mail className="w-5 h-5" />
@@ -134,7 +134,7 @@ export const Contact: React.FC = () => {
               </div>
 
               {/* Phone */}
-              <div className="p-4 rounded-2xl bg-[#061B22] border border-[#164652] flex items-center gap-3">
+              <div className="p-4 rounded-2xl bg-[#071F27] border border-[#164652] flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#0D3038] flex items-center justify-center text-[#27C5E8] shrink-0 border border-[#27C5E8]/30">
                   <Phone className="w-5 h-5" />
                 </div>
@@ -147,7 +147,7 @@ export const Contact: React.FC = () => {
               </div>
 
               {/* Location */}
-              <div className="p-4 rounded-2xl bg-[#061B22] border border-[#164652] flex items-center gap-3">
+              <div className="p-4 rounded-2xl bg-[#071F27] border border-[#164652] flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#0D3038] flex items-center justify-center text-[#F2C811] shrink-0 border border-[#F2C811]/30">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -169,7 +169,7 @@ export const Contact: React.FC = () => {
                     href={profileData.linkedin}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#061B22] border border-[#164652] hover:border-[#42E6B0] text-slate-300 hover:text-[#42E6B0] text-xs font-semibold transition-all hover:-translate-y-0.5"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#071F27] border border-[#164652] hover:border-[#42E6B0] text-slate-300 hover:text-[#42E6B0] text-xs font-semibold transition-all hover:-translate-y-0.5"
                   >
                     <LinkedinIcon className="w-4 h-4 text-[#0077B5]" />
                     <span>LinkedIn</span>
@@ -179,7 +179,7 @@ export const Contact: React.FC = () => {
                     href={profileData.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#061B22] border border-[#164652] hover:border-[#42E6B0] text-slate-300 hover:text-[#42E6B0] text-xs font-semibold transition-all hover:-translate-y-0.5"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#071F27] border border-[#164652] hover:border-[#42E6B0] text-slate-300 hover:text-[#42E6B0] text-xs font-semibold transition-all hover:-translate-y-0.5"
                   >
                     <GithubIcon className="w-4 h-4 text-white" />
                     <span>GitHub</span>
@@ -216,7 +216,7 @@ export const Contact: React.FC = () => {
                       setSubmitted(false)
                       setFormData({ name: '', email: '', subject: '', message: '' })
                     }}
-                    className="mt-3 px-5 py-2 text-xs font-bold rounded-full bg-[#164652] hover:bg-[#061B22] text-white transition-colors"
+                    className="mt-3 px-5 py-2 text-xs font-bold rounded-full bg-[#164652] hover:bg-[#071F27] text-white transition-colors"
                   >
                     Send Another Message
                   </button>
@@ -235,7 +235,7 @@ export const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="e.g. Rahul Sharma"
-                        className={`w-full px-4 py-2.5 rounded-xl bg-[#061B22] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
+                        className={`w-full px-4 py-2.5 rounded-xl bg-[#071F27] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
                           errors.name ? 'border-red-400' : 'border-[#164652]'
                         }`}
                       />
@@ -256,7 +256,7 @@ export const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="name@company.com"
-                        className={`w-full px-4 py-2.5 rounded-xl bg-[#061B22] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
+                        className={`w-full px-4 py-2.5 rounded-xl bg-[#071F27] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
                           errors.email ? 'border-red-400' : 'border-[#164652]'
                         }`}
                       />
@@ -279,7 +279,7 @@ export const Contact: React.FC = () => {
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       placeholder="e.g. Business Analyst Opportunity / Project Collaboration"
-                      className={`w-full px-4 py-2.5 rounded-xl bg-[#061B22] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
+                      className={`w-full px-4 py-2.5 rounded-xl bg-[#071F27] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
                         errors.subject ? 'border-red-400' : 'border-[#164652]'
                       }`}
                     />
@@ -301,7 +301,7 @@ export const Contact: React.FC = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Share project details, job description, or message..."
-                      className={`w-full px-4 py-2.5 rounded-xl bg-[#061B22] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
+                      className={`w-full px-4 py-2.5 rounded-xl bg-[#071F27] border text-white text-sm focus:outline-none focus:ring-2 focus:ring-[#42E6B0] transition-all placeholder:text-slate-500 ${
                         errors.message ? 'border-red-400' : 'border-[#164652]'
                       }`}
                     />
@@ -316,16 +316,16 @@ export const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] hover:from-[#35d8a1] hover:to-[#1ebad9] text-[#061B22] font-bold text-sm transition-all duration-300 shadow-md shadow-[#42E6B0]/20 hover:shadow-[#42E6B0]/35 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 cursor-pointer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] hover:from-[#35d8a1] hover:to-[#1ebad9] text-[#071F27] font-bold text-sm transition-all duration-300 shadow-md shadow-[#42E6B0]/20 hover:shadow-[#42E6B0]/35 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 cursor-pointer"
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="w-4 h-4 animate-spin text-[#061B22]" />
+                        <Loader2 className="w-4 h-4 animate-spin text-[#071F27]" />
                         <span>Sending Message...</span>
                       </>
                     ) : (
                       <>
-                        <Send className="w-4 h-4 text-[#061B22]" />
+                        <Send className="w-4 h-4 text-[#071F27]" />
                         <span>Send Message</span>
                       </>
                     )}

@@ -53,9 +53,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#061B22]/90 backdrop-blur-md border-b border-[#0D3038] shadow-lg shadow-black/20 py-3.5'
-          : 'bg-[#061B22] py-5'
+          ? 'bg-[#071F27]/95 backdrop-blur-md border-b border-[#164652] shadow-lg shadow-black/30 py-3.5'
+          : 'bg-[#071F27] border-b border-[#164652]/40 py-5'
       }`}
+
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -200,7 +201,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResumeModal }) => {
                   href={profileData.resumePath}
                   download="Mani_Shankar_Resume.pdf"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-[#061B22] bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] rounded-full shadow-md mt-1"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-[#071F27] bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] rounded-full shadow-md mt-1"
                 >
                   <Download className="w-4 h-4" />
                   <span>Download Resume (PDF)</span>

@@ -6,7 +6,8 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-[#061B22] via-[#08222B] to-[#092830]"
+      className="relative pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-40 lg:pb-32 overflow-hidden bg-[#071F27]"
+
     >
       {/* Background ambient teal glow */}
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-[#42E6B0]/5 rounded-full blur-3xl pointer-events-none" />
@@ -46,10 +47,10 @@ export const Hero: React.FC = () => {
               {/* Primary: View My Projects */}
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] hover:from-[#35d8a1] hover:to-[#1ebad9] text-[#061B22] font-bold text-sm sm:text-base transition-all duration-300 shadow-lg shadow-[#42E6B0]/20 hover:shadow-[#42E6B0]/35 hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] hover:from-[#35d8a1] hover:to-[#1ebad9] text-[#071F27] font-bold text-sm sm:text-base transition-all duration-300 shadow-lg shadow-[#42E6B0]/20 hover:shadow-[#42E6B0]/35 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>View My Projects</span>
-                <ArrowRight className="w-4 h-4 text-[#061B22] stroke-[2.5]" />
+                <ArrowRight className="w-4 h-4 text-[#071F27] stroke-[2.5]" />
               </a>
 
               {/* Secondary: Contact Me */}

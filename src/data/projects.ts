@@ -67,8 +67,7 @@ export const projectsData: Project[] = [
     challenges: [
       "Handling class imbalance where actual defaults represented ~12% of the total dataset.",
       "Balancing recall (capturing risky loans) with precision (avoiding rejection of creditworthy customers)."
-    ],
-    githubUrl: "https://github.com/manishankar/loan-default-prediction",
+    ]
   },
   {
     id: "maniloan",
@@ -76,7 +75,7 @@ export const projectsData: Project[] = [
     category: "FinTech & AI | LLMs & Banking Solutions",
     badgeText: "AI Assistant",
     shortDescription: "An AI-based support assistant developed using Groq API, LLMs, and Antigravity IDE to provide quick, reliable answers for loan seekers without bank dependency.",
-    tags: ["LLMs", "Groq API", "Antigravity IDE", "Stitch", "GitHub", "Prompt Engineering"],
+    tags: ["LLMs", "Groq API", "Antigravity IDE", "Stitch", "Prompt Engineering"],
     icon: "Building2",
     featured: true,
     accentColor: "#42E6B0",
@@ -89,7 +88,7 @@ export const projectsData: Project[] = [
       "Provide transparent eligibility benchmarks for 5 primary loan categories."
     ],
     dataset: "Retail banking benchmark datasets encompassing interest rates (8.5% - 13.5%), maximum debt-burden ratios, and standard tenure requirements.",
-    tools: ["LLMs", "Groq API", "Antigravity IDE", "Stitch", "GitHub", "React", "TypeScript", "Render"],
+    tools: ["LLMs", "Groq API", "Antigravity IDE", "Stitch", "React", "TypeScript", "Render"],
     methodology: [
       "LLM Integration & Prompt Engineering: Built contextual prompt templates ensuring compliant and helpful lending answers.",
       "API Handling: Connected Groq API for sub-second conversational latency.",
@@ -134,7 +133,6 @@ export const projectsData: Project[] = [
       "Maintaining high conversational accuracy while adhering to strict banking regulatory compliance.",
       "Optimizing prompt responses for concise, easy-to-understand financial guidance."
     ],
-    githubUrl: "https://github.com/manishankar/maniloan-platform",
     liveDemoUrl: "https://maniloan.onrender.com/"
   },
   {
@@ -195,16 +193,15 @@ export const projectsData: Project[] = [
     ],
     challenges: [
       "Reconciling return records without distorting gross sales KPIs."
-    ],
-    githubUrl: "https://github.com/manishankar/sales-bi-dashboard"
+    ]
   },
   {
     id: "curriculab-platform",
     title: "CurricuLab - Student Management System",
     category: "EdTech & Systems | AI Academic Support",
     badgeText: "Academic System",
-    shortDescription: "Built a student-centric study management system using ChatGPT, Antigravity IDE, Supabase, and GitHub to simplify resource access and academic support.",
-    tags: ["ChatGPT", "Antigravity IDE", "Supabase", "GitHub", "API Integration"],
+    shortDescription: "Built a student-centric study management system using ChatGPT, Antigravity IDE, Supabase, and modern web tools to simplify resource access and academic support.",
+    tags: ["ChatGPT", "Antigravity IDE", "Supabase", "REST APIs", "Render"],
     icon: "GraduationCap",
     featured: true,
     accentColor: "#9333EA",
@@ -217,11 +214,11 @@ export const projectsData: Project[] = [
       "Implement AI-powered study assistance for rapid question answering."
     ],
     dataset: "University course syllabi, module documentation, and student academic interaction records.",
-    tools: ["ChatGPT", "Antigravity IDE", "Supabase", "GitHub", "REST APIs", "Render"],
+    tools: ["ChatGPT", "Antigravity IDE", "Supabase", "REST APIs", "Render"],
     methodology: [
       "Database Architecture: Structured relational database schemas in Supabase for courses, topics, and assignments.",
       "AI Integration: Leveraged ChatGPT APIs to build automated student explanations and study summaries.",
-      "Version Control & Collaboration: Utilized GitHub repositories and Antigravity IDE for rapid sprint delivery.",
+      "Version Control & Collaboration: Utilized Git version control and Antigravity IDE for rapid sprint delivery.",
       "Cloud Hosting & Deployment: Deployed continuous delivery web platform on Render."
     ],
     keyVisualizations: [
@@ -248,7 +245,6 @@ export const projectsData: Project[] = [
     challenges: [
       "Synchronizing real-time database state across high simultaneous student traffic spikes."
     ],
-    githubUrl: "https://github.com/manishankar/curriculab-platform",
     liveDemoUrl: "https://curriculab-sj6g.onrender.com/"
   },
   {
@@ -307,13 +303,12 @@ export const projectsData: Project[] = [
     ],
     recommendations: [
       "Incorporate dynamic serverless telemetry to track portfolio interaction heatmaps.",
-      "Deploy automated GitHub Actions workflow to run regression and accessibility tests on every commit."
+      "Deploy automated CI/CD workflow to run regression and accessibility tests on every commit."
     ],
     challenges: [
       "Ensuring responsive SVG chart rendering and touch interactivity across all mobile screen dimensions.",
       "Configuring single-page application (SPA) rewrite rules on Render for smooth client-side routing."
     ],
-    githubUrl: "https://github.com/Veeramallamani/ManiShankar_Portfolio",
     liveDemoUrl: "https://manishankar-portfolio.onrender.com"
   }
-]
+];

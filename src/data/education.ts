@@ -55,7 +55,7 @@ export const experienceData: ExperienceItem[] = [
       "Integrated AI/ChatGPT APIs for on-demand academic explanation and student support.",
       "Gained deep experience in API integration, database management, teamwork, and real-world project deployment."
     ],
-    skillsLearned: ["ChatGPT & AI APIs", "Supabase", "Antigravity IDE", "GitHub", "Teamwork"],
+    skillsLearned: ["ChatGPT & AI APIs", "Supabase", "Antigravity IDE", "Git", "Teamwork"],
     link: "https://curriculab-sj6g.onrender.com/",
     linkText: "Live Demo"
   },

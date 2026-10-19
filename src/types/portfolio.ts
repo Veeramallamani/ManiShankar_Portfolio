@@ -22,7 +22,6 @@ export interface Project {
   findings: string[]
   recommendations: string[]
   challenges: string[]
-  githubUrl?: string
   liveDemoUrl?: string
   accentColor: string
 }

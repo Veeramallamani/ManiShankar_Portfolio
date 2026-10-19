@@ -74,7 +74,7 @@ export const toolsAndOthers = [
   { name: "Antigravity IDE", icon: "Code2" },
   { name: "Supabase", icon: "Database" },
   { name: "Groq API / LLMs", icon: "Cpu" },
-  { name: "GitHub", icon: "GitBranch" },
+  { name: "Git", icon: "GitBranch" },
   { name: "Orange Software", icon: "BrainCircuit" },
   { name: "VS Code", icon: "FileCode" },
   { name: "MS Office", icon: "Briefcase" }
@@ -113,7 +113,7 @@ export const expandedSkillCategories = [
   {
     title: "Applied AI & Development Tools",
     description: "Modern frameworks and developer tools leveraged across academic and FinTech projects.",
-    skills: ["LLMs & Groq API Handling", "Antigravity IDE", "Supabase Database Integration", "GitHub Version Control", "Orange ML Software"]
+    skills: ["LLMs & Groq API Handling", "Antigravity IDE", "Supabase Database Integration", "Git Version Control", "Orange ML Software"]
   },
   {
     title: "Core Soft Skills & Methodologies",

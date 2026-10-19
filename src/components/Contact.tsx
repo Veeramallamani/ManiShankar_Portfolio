@@ -10,7 +10,7 @@ import {
   Copy,
   Check
 } from 'lucide-react'
-import { LinkedinIcon, GithubIcon } from './SocialIcons'
+import { LinkedinIcon } from './SocialIcons'
 import { profileData } from '../data/profile'
 
 
@@ -173,16 +173,6 @@ export const Contact: React.FC = () => {
                   >
                     <LinkedinIcon className="w-4 h-4 text-[#0077B5]" />
                     <span>LinkedIn</span>
-                  </a>
-
-                  <a
-                    href={profileData.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#071F27] border border-[#164652] hover:border-[#42E6B0] text-slate-300 hover:text-[#42E6B0] text-xs font-semibold transition-all hover:-translate-y-0.5"
-                  >
-                    <GithubIcon className="w-4 h-4 text-white" />
-                    <span>GitHub</span>
                   </a>
                 </div>
               </div>

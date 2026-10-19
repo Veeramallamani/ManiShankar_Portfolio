@@ -11,7 +11,6 @@ export const profileData = {
   email: "veeramallamani7@gmail.com",
   phone: "+91 8688426036",
   linkedin: "https://www.linkedin.com/in/mani-shankar-v-93735628b",
-  github: "https://github.com/manishankar",
   resumePath: "/resume.pdf",
   stats: [
     { value: "5+", label: "Featured Projects", icon: "GraduationCap" },

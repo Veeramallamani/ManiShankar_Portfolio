@@ -12,7 +12,7 @@ Designed with a premium dark-teal and mint-green visual identity, interactive da
 - **About Me & Skills Matrix:** Clean dual-column section featuring professional background, 8 dedicated skill cards (MS Excel, Power BI, Tableau, Python, R Programming, Basic SQL, Data Analysis, Presentation), and a modern tools tray.
 - **Featured Projects with Interactive Modals:**
   - **Interactive Analytics Portfolio Platform:** High-performance web application built with React 19, TypeScript, Tailwind CSS, Recharts, and deployed live on Render ([https://manishankar-portfolio.onrender.com](https://manishankar-portfolio.onrender.com)).
-  - **CurricuLab - Student Management System:** Academic resource platform with ChatGPT, Antigravity IDE, Supabase, and GitHub, deployed live on Render ([https://curriculab-sj6g.onrender.com/](https://curriculab-sj6g.onrender.com/)).
+  - **CurricuLab - Student Management System:** Academic resource platform with ChatGPT, Antigravity IDE, Supabase, and REST APIs, deployed live on Render ([https://curriculab-sj6g.onrender.com/](https://curriculab-sj6g.onrender.com/)).
   - **Loan Eligibility AI Assistant (ManiLoan):** AI-based banking assistant powered by Groq API and LLMs, deployed live on Render ([https://maniloan.onrender.com/](https://maniloan.onrender.com/)).
   - **Loan Default Prediction:** Machine learning credit risk classification pipeline.
   - **Sales Dashboard:** Business Intelligence KPI scorecard in Power BI & Tableau.

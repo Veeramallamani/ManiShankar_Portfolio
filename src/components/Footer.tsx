@@ -1,5 +1,5 @@
 import { Mail, ArrowUp } from 'lucide-react'
-import { LinkedinIcon, GithubIcon } from './SocialIcons'
+import { LinkedinIcon } from './SocialIcons'
 import { Logo } from './Logo'
 import { profileData } from '../data/profile'
 
@@ -73,18 +73,6 @@ export const Footer: React.FC = () => {
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
-
-              <a
-                href={profileData.github}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-xl bg-[#092830] border border-[#164652] hover:border-[#42E6B0] flex items-center justify-center text-slate-300 hover:text-[#42E6B0] transition-colors"
-                title="GitHub Profile"
-                aria-label="GitHub"
-              >
-                <GithubIcon className="w-4 h-4" />
-              </a>
-
 
               <a
                 href={`mailto:${profileData.email}`}

@@ -15,7 +15,6 @@ import {
   BarChart2,
   GraduationCap
 } from 'lucide-react'
-import { GithubIcon } from './SocialIcons'
 import {
   ResponsiveContainer,
   BarChart,
@@ -170,17 +169,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               >
                 <span>Live Demo</span>
                 <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-            )}
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-[#0D3038] transition-colors"
-                title="View Code on GitHub"
-              >
-                <GithubIcon className="w-4 h-4" />
               </a>
             )}
             <button

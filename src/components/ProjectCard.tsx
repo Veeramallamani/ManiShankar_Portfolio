@@ -1,5 +1,4 @@
 import { ArrowRight, TrendingUp, Building2, BarChart3, GraduationCap, ExternalLink, Globe } from 'lucide-react'
-import { GithubIcon } from './SocialIcons'
 import type { Project } from '../types/portfolio'
 
 
@@ -96,17 +95,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
               >
                 <span>Live</span>
                 <ExternalLink className="w-3 h-3" />
-              </a>
-            )}
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-white p-1"
-                title="GitHub Repository"
-              >
-                <GithubIcon className="w-3.5 h-3.5" />
               </a>
             )}
           </div>

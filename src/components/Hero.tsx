@@ -68,22 +68,22 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col items-center justify-center relative">
             <div className="relative w-full max-w-[420px] sm:max-w-[460px] mx-auto">
               
-              {/* Decorative Handwritten text: "Data Analytics Growth" with underline */}
-              <div className="absolute -top-6 -right-2 sm:-top-8 sm:right-2 z-20 pointer-events-none select-none text-right">
+              {/* Decorative Handwritten text: "Business Analytics Growth" with arrow pointing to photo */}
+              <div className="absolute -top-7 -right-1 sm:-top-10 sm:right-2 z-20 pointer-events-none select-none text-right">
                 <span className="font-handwriting text-2xl sm:text-3xl text-cyan-200 tracking-wide block rotate-[-8deg] drop-shadow-md">
-                  Data<br />Analytics<br />Growth
+                  Business<br />Analytics<br />Growth
                 </span>
-                {/* Hand-drawn curved underline swoosh */}
+                {/* Hand-drawn curved arrow pointing to the photo */}
                 <svg
-                  className="w-20 h-5 sm:w-24 sm:h-6 text-[#42E6B0] -mt-1 ml-auto"
-                  viewBox="0 0 100 24"
+                  className="w-20 h-6 sm:w-24 sm:h-7 text-[#42E6B0] -mt-1 ml-auto"
+                  viewBox="0 0 100 28"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M3 14C24 6 58 5 95 18M78 8L96 19L84 22"
+                    d="M94 6C64 5 32 10 6 18M20 9L5 18L17 25"
                     stroke="currentColor"
-                    strokeWidth="2.2"
+                    strokeWidth="2.4"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />

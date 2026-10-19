@@ -8,7 +8,7 @@ Designed with a premium dark-teal and mint-green visual identity, interactive da
 
 ## 🌟 Key Features
 
-- **Hero Section:** Dark teal visual identity (`#061B22` / `#092830`), mint-cyan gradient headline, official portrait, handwritten accent script ("Data Analytics Growth"), and glassmorphism statistics card.
+- **Hero Section:** Dark teal visual identity (`#061B22` / `#092830`), mint-cyan gradient headline, official portrait, handwritten accent script ("Business Analytics Growth"), and glassmorphism statistics card.
 - **About Me & Skills Matrix:** Clean dual-column section featuring professional background, 8 dedicated skill cards (MS Excel, Power BI, Tableau, Python, R Programming, Basic SQL, Data Analysis, Presentation), and a modern tools tray.
 - **Featured Projects with Interactive Modals:**
   - **Interactive Analytics Portfolio Platform:** High-performance web application built with React 19, TypeScript, Tailwind CSS, Recharts, and deployed live on Render ([https://manishankar-portfolio.onrender.com](https://manishankar-portfolio.onrender.com)).

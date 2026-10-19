@@ -80,7 +80,7 @@ export const projectsData: Project[] = [
     icon: "Building2",
     featured: true,
     accentColor: "#42E6B0",
-    overview: "Developed an AI-based support assistant to provide quick, reliable answers for loan seekers without the help of banks. The system evaluates borrowing criteria across Personal, Home, and Education loans, calculates real-time EMIs, and demystifies banking requirements.",
+    overview: "Developed an AI-based banking support assistant deployed live on Render to provide quick, reliable answers for loan seekers without bank dependency. The system evaluates borrowing criteria across Personal, Home, and Education loans, calculates real-time EMIs, and demystifies banking requirements.",
     businessProblem: "Loan seekers frequently face confusing bank underwriting requirements and lengthy pre-qualification delays, resulting in unnecessary credit score hits and high applicant drop-off.",
     objectives: [
       "Developed an AI-based support assistant to provide quick, reliable answers for Loan seekers without help of Banks.",
@@ -89,12 +89,13 @@ export const projectsData: Project[] = [
       "Provide transparent eligibility benchmarks for 5 primary loan categories."
     ],
     dataset: "Retail banking benchmark datasets encompassing interest rates (8.5% - 13.5%), maximum debt-burden ratios, and standard tenure requirements.",
-    tools: ["LLMs", "Groq API", "Antigravity IDE", "Stitch", "GitHub", "React", "TypeScript"],
+    tools: ["LLMs", "Groq API", "Antigravity IDE", "Stitch", "GitHub", "React", "TypeScript", "Render"],
     methodology: [
       "LLM Integration & Prompt Engineering: Built contextual prompt templates ensuring compliant and helpful lending answers.",
       "API Handling: Connected Groq API for sub-second conversational latency.",
       "Chatbot Development: Designed intuitive customer conversation flows tailored for first-time loan applicants.",
-      "Financial Calculation Engine: Integrated reducing-balance EMI amortization algorithms."
+      "Financial Calculation Engine: Integrated reducing-balance EMI amortization algorithms.",
+      "Cloud Deployment: Deployed continuous delivery web application on Render."
     ],
     keyVisualizations: [
       {
@@ -134,7 +135,7 @@ export const projectsData: Project[] = [
       "Optimizing prompt responses for concise, easy-to-understand financial guidance."
     ],
     githubUrl: "https://github.com/manishankar/maniloan-platform",
-    liveDemoUrl: "https://maniloan.onrender.com"
+    liveDemoUrl: "https://maniloan.onrender.com/"
   },
   {
     id: "sales-dashboard",

@@ -55,6 +55,8 @@ export interface ExperienceItem {
   description: string
   responsibilities: string[]
   skillsLearned: string[]
+  link?: string
+  linkText?: string
 }
 
 export interface CertificationItem {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GraduationCap, Briefcase, Building, Award, Check } from 'lucide-react'
+import { GraduationCap, Briefcase, Building, Award, Check, ExternalLink } from 'lucide-react'
 import { educationData, experienceData } from '../data/education'
 
 export const EducationExperience: React.FC = () => {
@@ -140,9 +140,22 @@ export const EducationExperience: React.FC = () => {
                       <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-[#0D3038] text-slate-200 border border-[#164652]">
                         {exp.duration}
                       </span>
-                      <span className="text-xs font-semibold text-[#42E6B0]">
-                        {exp.type}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-semibold text-[#42E6B0]">
+                          {exp.type}
+                        </span>
+                        {exp.link && (
+                          <a
+                            href={exp.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#42E6B0]/15 hover:bg-[#42E6B0]/25 text-[#42E6B0] hover:text-white border border-[#42E6B0]/30 text-xs font-semibold transition-colors"
+                          >
+                            <span>{exp.linkText || 'Live Demo'}</span>
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        )}
+                      </div>
                     </div>
 
                     <h4 className="text-lg font-bold text-white mb-1">

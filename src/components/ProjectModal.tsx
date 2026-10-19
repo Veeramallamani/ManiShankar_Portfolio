@@ -258,6 +258,38 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {/* TAB 1: OVERVIEW */}
           {activeTab === 'overview' && (
             <div className="space-y-6 animate-in fade-in duration-200">
+              {/* Live Deployment Banner if project has liveDemoUrl */}
+              {project.liveDemoUrl && (
+                <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#092830] to-[#0D3038] border border-[#42E6B0]/40 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-black/20">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#071F27] border border-[#42E6B0]/40 flex items-center justify-center shrink-0 text-[#42E6B0]">
+                      <Globe className="w-5 h-5 text-[#42E6B0]" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h4 className="text-sm font-bold text-white">Live Application Deployed</h4>
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#42E6B0]/15 text-[#42E6B0] text-[10px] font-semibold border border-[#42E6B0]/30">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#42E6B0] animate-pulse" />
+                          Online on Render
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-300">
+                        {project.liveDemoUrl}
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] text-[#071F27] font-bold text-xs hover:shadow-lg hover:shadow-[#42E6B0]/25 transition-all hover:scale-105 shrink-0"
+                  >
+                    <span>Launch Live App</span>
+                    <ExternalLink className="w-3.5 h-3.5 stroke-[2.5]" />
+                  </a>
+                </div>
+              )}
+
               {/* Business Problem */}
               <div className="p-5 rounded-2xl bg-[#0D3038] border border-[#164652]">
                 <h3 className="text-base font-bold text-white flex items-center gap-2 mb-2">
@@ -778,11 +810,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               ) : (
                 /* ManiLoan / Financial Simulator */
                 <div className="p-6 rounded-2xl bg-[#071F27] border border-[#164652] space-y-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Calculator className="w-5 h-5 text-[#42E6B0]" />
-                    <h3 className="text-base font-bold text-white">
-                      ManiLoan Real-Time EMI & Repayment Calculator
-                    </h3>
+                  <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                    <div className="flex items-center gap-2">
+                      <Calculator className="w-5 h-5 text-[#42E6B0]" />
+                      <h3 className="text-base font-bold text-white">
+                        ManiLoan Real-Time EMI & Repayment Calculator
+                      </h3>
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#42E6B0]/10 border border-[#42E6B0]/30 text-[#42E6B0] text-xs font-semibold">
+                      <span className="w-2 h-2 rounded-full bg-[#42E6B0] animate-pulse" />
+                      Live on Render
+                    </span>
                   </div>
                   <p className="text-xs text-slate-300">
                     Calculates exact monthly repayments based on reducing balance amortization.
@@ -841,7 +879,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     </div>
 
                     {/* Results Box */}
-                    <div className="p-5 rounded-xl bg-[#0D3038] border border-[#164652] flex flex-col justify-center space-y-3">
+                    <div className="p-5 rounded-xl bg-[#0D3038] border border-[#164652] flex flex-col justify-center space-y-4">
                       <div>
                         <span className="text-[11px] uppercase tracking-wider text-slate-400 block">
                           Monthly EMI
@@ -866,9 +904,20 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                         </div>
                       </div>
 
-                      <div className="text-[11px] text-slate-400 pt-1">
+                      <div className="text-[11px] text-slate-400">
                         Suitable minimum monthly income: ~₹{Math.round(emiResults.monthlyEMI * 2).toLocaleString('en-IN')} (assuming 50% FOIR cap).
                       </div>
+
+                      {/* Direct Live Link Action */}
+                      <a
+                        href={project.liveDemoUrl || "https://maniloan.onrender.com/"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-gradient-to-r from-[#42E6B0] to-[#27C5E8] text-[#071F27] font-bold text-xs hover:shadow-lg hover:shadow-[#42E6B0]/20 transition-all hover:scale-[1.02]"
+                      >
+                        <span>Open ManiLoan Live Application</span>
+                        <ExternalLink className="w-3.5 h-3.5 stroke-[2.5]" />
+                      </a>
                     </div>
                   </div>
                 </div>

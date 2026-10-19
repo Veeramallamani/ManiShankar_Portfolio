@@ -13,7 +13,7 @@ Designed with a premium dark-teal and mint-green visual identity, interactive da
 - **Featured Projects with Interactive Modals:**
   - **Interactive Analytics Portfolio Platform:** High-performance web application built with React 19, TypeScript, Tailwind CSS, Recharts, and deployed live on Render ([https://manishankar-portfolio.onrender.com](https://manishankar-portfolio.onrender.com)).
   - **CurricuLab - Student Management System:** Academic resource platform with ChatGPT, Antigravity IDE, Supabase, and GitHub.
-  - **Loan Eligibility AI Assistant (ManiLoan):** AI-based banking assistant powered by Groq API and LLMs.
+  - **Loan Eligibility AI Assistant (ManiLoan):** AI-based banking assistant powered by Groq API and LLMs, deployed live on Render ([https://maniloan.onrender.com/](https://maniloan.onrender.com/)).
   - **Loan Default Prediction:** Machine learning credit risk classification pipeline.
   - **Sales Dashboard:** Business Intelligence KPI scorecard in Power BI & Tableau.
 - **Interactive Simulators:** Embedded within project modals using **Recharts** charts (ROC/risk distribution, category breakdown, EMI curves) and live risk/EMI calculation sliders.

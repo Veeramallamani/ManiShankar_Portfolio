@@ -70,7 +70,9 @@ export const experienceData: ExperienceItem[] = [
       "Integrated interactive chatbot and Stitch UI components via Antigravity IDE.",
       "Gained hands-on experience in prompt engineering, API handling, and banking customer AI solutions."
     ],
-    skillsLearned: ["LLMs & Groq API", "Prompt Engineering", "Chatbot Development", "Stitch", "Bank AI Solutions"]
+    skillsLearned: ["LLMs & Groq API", "Prompt Engineering", "Chatbot Development", "Stitch", "Bank AI Solutions"],
+    link: "https://maniloan.onrender.com/",
+    linkText: "Live Demo"
   },
   {
     id: "analytics-workshops",

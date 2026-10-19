@@ -15,7 +15,6 @@ Designed with a premium dark-teal and mint-green visual identity, interactive da
   - **CurricuLab - Student Management System:** Academic resource platform with ChatGPT, Antigravity IDE, Supabase, and REST APIs, deployed live on Render ([https://curriculab-sj6g.onrender.com/](https://curriculab-sj6g.onrender.com/)).
   - **Loan Eligibility AI Assistant (ManiLoan):** AI-based banking assistant powered by Groq API and LLMs, deployed live on Render ([https://maniloan.onrender.com/](https://maniloan.onrender.com/)).
   - **Loan Default Prediction:** Machine learning credit risk classification pipeline.
-  - **Sales Dashboard:** Business Intelligence KPI scorecard in Power BI & Tableau.
 - **Interactive Simulators:** Embedded within project modals using **Recharts** charts (ROC/risk distribution, category breakdown, EMI curves) and live risk/EMI calculation sliders.
 - **Education & Experience Timelines:** Sandip University (MBA in Business Analytics), Andhra Loyola College (B.Com Computers), Masters C.Com Junior College, and practical leadership milestones.
 - **Verified Certifications:** Power BI Workshop, Generative AI, and Machine Learning using Orange Software.

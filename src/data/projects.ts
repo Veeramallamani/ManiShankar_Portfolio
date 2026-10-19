@@ -136,66 +136,6 @@ export const projectsData: Project[] = [
     liveDemoUrl: "https://maniloan.onrender.com/"
   },
   {
-    id: "sales-dashboard",
-    title: "Sales Dashboard",
-    category: "Business Intelligence | Data Visualization",
-    badgeText: "Business Intelligence",
-    shortDescription: "An executive dashboard project designed to organize sales data into meaningful KPIs, performance trends, comparisons, and actionable business insights.",
-    tags: ["Power BI", "Tableau", "MS Excel", "DAX", "Data Modeling"],
-    icon: "BarChart3",
-    featured: true,
-    accentColor: "#F2C811",
-    overview: "An interactive Business Intelligence dashboard designed to organize multi-region sales performance metrics into transparent KPIs, executive trends, and actionable inventory recommendations.",
-    businessProblem: "Fragmented spreadsheets and delayed monthly reports made it difficult for decision makers to spot underperforming regions and changing product category profitability.",
-    objectives: [
-      "Aggregate multi-regional sales records into a clean relational data model.",
-      "Construct core executive KPIs: Gross Revenue, Gross Margin %, Average Order Value.",
-      "Build dynamic trend visualizations in Power BI & Tableau.",
-      "Formulate data-backed inventory and sales strategy recommendations."
-    ],
-    dataset: "Superstore & retail transactional dataset containing 50,000+ records covering orders, products, categories, sales, discounts, and profits.",
-    tools: ["Power BI", "Tableau", "MS Excel", "Basic SQL"],
-    methodology: [
-      "Data Cleaning & Transformation: Cleaned transactional anomalies and merged regional datasets.",
-      "Data Modeling & DAX: Constructed custom DAX measures for Year-to-Date (YTD) Revenue and Profit Margin %.",
-      "Dashboard UX: Designed high-contrast scorecards and interactive filters for rapid drill-downs."
-    ],
-    keyVisualizations: [
-      {
-        title: "Quarterly Revenue & Profit Performance (in ₹ Lakhs)",
-        type: "bar",
-        description: "Upward trajectory in Q3-Q4 driven by seasonal demand, with stable profit margins of 18-21%.",
-        data: [
-          { quarter: "Q1 FY25", revenue: 84.5, profit: 15.2 },
-          { quarter: "Q2 FY25", revenue: 98.2, profit: 18.4 },
-          { quarter: "Q3 FY25", revenue: 125.6, profit: 26.1 },
-          { quarter: "Q4 FY25", revenue: 148.0, profit: 31.8 },
-        ]
-      },
-      {
-        title: "Sales Breakdown by Product Category",
-        type: "pie",
-        description: "Technology and Office Supplies deliver the highest margin contributions.",
-        data: [
-          { name: "Technology", value: 45, color: "#42E6B0" },
-          { name: "Furniture", value: 30, color: "#27C5E8" },
-          { name: "Office Supplies", value: 25, color: "#F2C811" },
-        ]
-      }
-    ],
-    findings: [
-      "Discounts above 20% on Furniture categories consistently degraded overall gross margin.",
-      "Corporate clients maintained the highest retention rate (76%) and an Average Order Value 3.2x greater than retail purchasers."
-    ],
-    recommendations: [
-      "Cap representative discounting at 15% on low-margin furniture items.",
-      "Reallocate marketing budget towards high-margin Technology categories."
-    ],
-    challenges: [
-      "Reconciling return records without distorting gross sales KPIs."
-    ]
-  },
-  {
     id: "curriculab-platform",
     title: "CurricuLab - Student Management System",
     category: "EdTech & Systems | AI Academic Support",

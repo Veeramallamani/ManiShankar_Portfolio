@@ -12,7 +12,6 @@ import {
   Layers,
   ChevronRight,
   Globe,
-  BarChart2,
   GraduationCap
 } from 'lucide-react'
 import {
@@ -53,10 +52,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
   const [monthlyVisitors, setMonthlyVisitors] = useState(5000)
   const [cacheHitRate, setCacheHitRate] = useState(94)
 
-  // Sales Profitability Simulator State
-  const [salesVolume, setSalesVolume] = useState(1200)
-  const [avgOrderValue, setAvgOrderValue] = useState(3500)
-  const [discountRate, setDiscountRate] = useState(12)
 
   // CurricuLab Cohort Simulator State
   const [studentCohort, setStudentCohort] = useState(450)
@@ -109,21 +104,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
     }
   }
 
-  // Sales Profitability Simulator
-  const calculateSalesMetrics = () => {
-    const grossRevenue = salesVolume * avgOrderValue
-    const discountLoss = grossRevenue * (discountRate / 100)
-    const netRevenue = grossRevenue - discountLoss
-    const netProfit = (grossRevenue * 0.32) - discountLoss
-    const profitMargin = ((netProfit / (netRevenue || 1)) * 100).toFixed(1)
-    return {
-      grossRevenue,
-      discountLoss,
-      netRevenue,
-      netProfit: Math.round(netProfit),
-      profitMargin: Number(profitMargin),
-    }
-  }
 
   // CurricuLab Academic Resource Simulator
   const calculateAcademicMetrics = () => {
@@ -140,7 +120,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
   const emiResults = calculateEMI()
   const riskResults = calculateRiskTier()
   const webResults = calculateWebMetrics()
-  const salesResults = calculateSalesMetrics()
   const academicResults = calculateAcademicMetrics()
 
   return (
@@ -543,97 +522,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                         <span>Open Live Web Application</span>
                         <ExternalLink className="w-3.5 h-3.5 stroke-[2.5]" />
                       </a>
-                    </div>
-                  </div>
-                </div>
-              ) : project.id === 'sales-dashboard' ? (
-                /* Sales Margin Simulator */
-                <div className="p-6 rounded-2xl bg-[#071F27] border border-[#164652] space-y-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <BarChart2 className="w-5 h-5 text-[#F2C811]" />
-                    <h3 className="text-base font-bold text-white">
-                      Executive Sales Margin & Discount Sensitivity Simulator
-                    </h3>
-                  </div>
-                  <p className="text-xs text-slate-300">
-                    Evaluate how variations in average discounting policy impact overall bottom-line net profit across retail sales orders.
-                  </p>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                    <div className="space-y-4">
-                      <div>
-                        <div className="flex justify-between text-xs font-semibold mb-1">
-                          <span className="text-slate-300">Quarterly Order Volume</span>
-                          <span className="text-[#42E6B0] font-bold">{salesVolume.toLocaleString()} orders</span>
-                        </div>
-                        <input
-                          type="range"
-                          min="200"
-                          max="5000"
-                          step="100"
-                          value={salesVolume}
-                          onChange={(e) => setSalesVolume(Number(e.target.value))}
-                          className="w-full accent-[#42E6B0] cursor-pointer"
-                        />
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-xs font-semibold mb-1">
-                          <span className="text-slate-300">Average Order Value (AOV)</span>
-                          <span className="text-[#27C5E8] font-bold">₹{avgOrderValue.toLocaleString('en-IN')}</span>
-                        </div>
-                        <input
-                          type="range"
-                          min="1000"
-                          max="10000"
-                          step="250"
-                          value={avgOrderValue}
-                          onChange={(e) => setAvgOrderValue(Number(e.target.value))}
-                          className="w-full accent-[#27C5E8] cursor-pointer"
-                        />
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-xs font-semibold mb-1">
-                          <span className="text-slate-300">Discount Policy (%)</span>
-                          <span className="text-[#F2C811] font-bold">{discountRate}%</span>
-                        </div>
-                        <input
-                          type="range"
-                          min="0"
-                          max="25"
-                          step="1"
-                          value={discountRate}
-                          onChange={(e) => setDiscountRate(Number(e.target.value))}
-                          className="w-full accent-[#F2C811] cursor-pointer"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="p-5 rounded-xl bg-[#0D3038] border border-[#164652] flex flex-col justify-center space-y-3">
-                      <div>
-                        <span className="text-[11px] uppercase tracking-wider text-slate-400 block">
-                          Projected Gross Revenue
-                        </span>
-                        <div className="text-2xl font-extrabold text-white">
-                          ₹{salesResults.grossRevenue.toLocaleString('en-IN')}
-                        </div>
-                      </div>
-                      <div className="pt-2 border-t border-[#164652] grid grid-cols-2 gap-2 text-xs">
-                        <div>
-                          <span className="text-slate-400 block text-[10px]">Net Operating Profit</span>
-                          <span className={`font-semibold ${salesResults.netProfit > 0 ? 'text-[#42E6B0]' : 'text-rose-400'}`}>
-                            ₹{salesResults.netProfit.toLocaleString('en-IN')}
-                          </span>
-                        </div>
-                        <div>
-                          <span className="text-slate-400 block text-[10px]">Effective Net Margin</span>
-                          <span className="font-semibold text-slate-200">
-                            {salesResults.profitMargin}%
-                          </span>
-                        </div>
-                      </div>
-                      <div className="text-[11px] text-slate-400 pt-1">
-                        Discount erosions above 18% severely compress operating margins on furniture lines.
-                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,4 @@
-import { ArrowRight, TrendingUp, Building2, BarChart3, GraduationCap, ExternalLink } from 'lucide-react'
+import { ArrowRight, TrendingUp, Building2, BarChart3, GraduationCap, ExternalLink, Globe } from 'lucide-react'
 import { GithubIcon } from './SocialIcons'
 import type { Project } from '../types/portfolio'
 
@@ -19,6 +19,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
         return <BarChart3 className="w-5 h-5 text-[#F2C811]" />
       case 'GraduationCap':
         return <GraduationCap className="w-5 h-5 text-[#C084FC]" />
+      case 'Globe':
+        return <Globe className="w-5 h-5 text-[#42E6B0]" />
       default:
         return <TrendingUp className="w-5 h-5 text-[#42E6B0]" />
     }
@@ -89,10 +91,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) =
                 href={project.liveDemoUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-white p-1"
-                title="Live Demo"
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#42E6B0]/15 hover:bg-[#42E6B0]/25 text-[#42E6B0] hover:text-white border border-[#42E6B0]/30 transition-colors font-medium text-[11px]"
+                title="Open Live Website / Demo"
               >
-                <ExternalLink className="w-3.5 h-3.5" />
+                <span>Live</span>
+                <ExternalLink className="w-3 h-3" />
               </a>
             )}
             {project.githubUrl && (

@@ -111,14 +111,14 @@ export const Hero: React.FC = () => {
 
                 <div className="glass-panel rounded-2xl p-3 sm:p-4 shadow-xl shadow-black/40 grid grid-cols-3 divide-x divide-[#42E6B0]/20 text-center">
                   
-                  {/* Stat 1: Academic Projects */}
+                  {/* Stat 1: Featured Projects */}
                   <div className="px-1.5 sm:px-2 flex flex-col items-center justify-center">
                     <div className="flex items-center gap-1.5 sm:gap-2 text-[#42E6B0] mb-0.5 sm:mb-1">
                       <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-[#42E6B0]" />
-                      <span className="text-base sm:text-xl font-bold text-white tracking-tight">2+</span>
+                      <span className="text-base sm:text-xl font-bold text-white tracking-tight">5+</span>
                     </div>
                     <span className="text-[10px] sm:text-xs text-slate-300 font-medium leading-tight">
-                      Academic Projects
+                      Featured Projects
                     </span>
                   </div>
 

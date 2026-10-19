@@ -14,7 +14,7 @@ export const profileData = {
   github: "https://github.com/manishankar",
   resumePath: "/resume.pdf",
   stats: [
-    { value: "2+", label: "Academic Projects", icon: "GraduationCap" },
+    { value: "5+", label: "Featured Projects", icon: "GraduationCap" },
     { value: "6+", label: "Tools & Technologies", icon: "BarChart3" },
     { value: "100%", label: "Learning Mindset", icon: "Star" },
   ],

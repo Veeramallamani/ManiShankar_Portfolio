@@ -652,11 +652,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               ) : project.id === 'curriculab-platform' ? (
                 /* CurricuLab Academic Resource Simulator */
                 <div className="p-6 rounded-2xl bg-[#071F27] border border-[#164652] space-y-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <GraduationCap className="w-5 h-5 text-[#C084FC]" />
-                    <h3 className="text-base font-bold text-white">
-                      CurricuLab Academic Resource & Time Saved Estimator
-                    </h3>
+                  <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                    <div className="flex items-center gap-2">
+                      <GraduationCap className="w-5 h-5 text-[#C084FC]" />
+                      <h3 className="text-base font-bold text-white">
+                        CurricuLab Academic Resource & Time Saved Estimator
+                      </h3>
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#C084FC]/10 border border-[#C084FC]/30 text-[#C084FC] text-xs font-semibold">
+                      <span className="w-2 h-2 rounded-full bg-[#C084FC] animate-pulse" />
+                      Live on Render
+                    </span>
                   </div>
                   <p className="text-xs text-slate-300">
                     Estimate administrative office hours preserved and student engagement gains via centralized Supabase resource indexing.
@@ -696,7 +702,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                       </div>
                     </div>
 
-                    <div className="p-5 rounded-xl bg-[#0D3038] border border-[#164652] flex flex-col justify-center space-y-3">
+                    <div className="p-5 rounded-xl bg-[#0D3038] border border-[#164652] flex flex-col justify-center space-y-4">
                       <div>
                         <span className="text-[11px] uppercase tracking-wider text-slate-400 block">
                           Weekly AI Resource Queries
@@ -719,9 +725,20 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                           </span>
                         </div>
                       </div>
-                      <div className="text-[11px] text-slate-400 pt-1">
+                      <div className="text-[11px] text-slate-400">
                         Automated AI indexing eliminates duplicate syllabus search inquiries across courses.
                       </div>
+
+                      {/* Direct Live Link Action */}
+                      <a
+                        href={project.liveDemoUrl || "https://curriculab-sj6g.onrender.com/"}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-gradient-to-r from-[#C084FC] to-[#27C5E8] text-[#071F27] font-bold text-xs hover:shadow-lg hover:shadow-[#C084FC]/20 transition-all hover:scale-[1.02]"
+                      >
+                        <span>Open CurricuLab Live Platform</span>
+                        <ExternalLink className="w-3.5 h-3.5 stroke-[2.5]" />
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -208,7 +208,7 @@ export const projectsData: Project[] = [
     icon: "GraduationCap",
     featured: true,
     accentColor: "#9333EA",
-    overview: "Built a student-centric study management system to simplify resource access, classroom integration, and AI-based academic support. Gained experience in API integration, database management, AI tool integration, teamwork, and real-world project development.",
+    overview: "Built a student-centric study management system deployed live on Render to simplify resource access, classroom integration, and AI-based academic support. Gained experience in API integration, database management, AI tool integration, teamwork, and real-world project development.",
     businessProblem: "Academic content was scattered across disparate file drives and classroom threads, resulting in low student resource discovery and high teacher administrative overhead.",
     objectives: [
       "Built a student-centric study management system to simplify resource access, classroom integration, and AI-based academic support.",
@@ -217,11 +217,12 @@ export const projectsData: Project[] = [
       "Implement AI-powered study assistance for rapid question answering."
     ],
     dataset: "University course syllabi, module documentation, and student academic interaction records.",
-    tools: ["ChatGPT", "Antigravity IDE", "Supabase", "GitHub", "REST APIs"],
+    tools: ["ChatGPT", "Antigravity IDE", "Supabase", "GitHub", "REST APIs", "Render"],
     methodology: [
       "Database Architecture: Structured relational database schemas in Supabase for courses, topics, and assignments.",
       "AI Integration: Leveraged ChatGPT APIs to build automated student explanations and study summaries.",
-      "Version Control & Collaboration: Utilized GitHub repositories and Antigravity IDE for rapid sprint delivery."
+      "Version Control & Collaboration: Utilized GitHub repositories and Antigravity IDE for rapid sprint delivery.",
+      "Cloud Hosting & Deployment: Deployed continuous delivery web platform on Render."
     ],
     keyVisualizations: [
       {
@@ -247,7 +248,8 @@ export const projectsData: Project[] = [
     challenges: [
       "Synchronizing real-time database state across high simultaneous student traffic spikes."
     ],
-    githubUrl: "https://github.com/manishankar/curriculab-platform"
+    githubUrl: "https://github.com/manishankar/curriculab-platform",
+    liveDemoUrl: "https://curriculab-sj6g.onrender.com/"
   },
   {
     id: "portfolio-platform",
